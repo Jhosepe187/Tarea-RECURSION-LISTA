@@ -8,3 +8,9 @@ def suma_mayores_iguales(valor, lista):
         return lista[0] + suma_mayores_iguales(valor, lista[1:])
     else:
         return suma_mayores_iguales(valor, lista[1:])
+    
+numeros = [3, 7, 2, 9, 5, 1]
+valor = 5
+
+resultado = suma_mayores_iguales(valor, numeros)
+print("La suma es:", resultado)
