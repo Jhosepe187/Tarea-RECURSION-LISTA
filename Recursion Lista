@@ -1,0 +1,10 @@
+def suma_mayores_iguales(valor, lista):
+    # Caso base: si la lista está vacía
+    if len(lista) == 0:
+        return 0
+    
+    # Si el primer elemento es >= al valor, se suma
+    if lista[0] >= valor:
+        return lista[0] + suma_mayores_iguales(valor, lista[1:])
+    else:
+        return suma_mayores_iguales(valor, lista[1:])
